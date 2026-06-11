@@ -25,22 +25,11 @@ The project is pre-configured to compile into a **single, standalone executable 
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/FakePanic.git](https://github.com/YOUR_USERNAME/FakePanic.git)
-   
-
+   git clone https://github.com/wh0amitg/FakePanic.git
 
 ## ⚠️ Disclaimer & Safety
 
 This application is developed **strictly for educational and entertainment purposes (pranks/jokes)**. 
 * **NOT Malware:** It does not contain any malicious payloads, virus behavior, or spyware.
 * **Completely Harmless:** It does not modify system files, inject into other processes, encrypt data, or alter registry keys. It is purely a visual and audio simulation.
-* **Easy to Close:** No actual system lockout occurs. You can terminate the application at any time using standard Windows methods (like `Alt + F4` or Task Manager).
-
-## 🧠 How It Works (Under the Hood)
-
-The application is built using a clean, lightweight stack to ensure high performance and zero external dependencies for the end-user:
-
-* **UI & Core Logic:** Developed in **C#** utilizing **Windows Forms (WinForms)** on top of **.NET Framework 4.7.2**. It leverages native Windows API calls to handle full-screen rendering and window management for a convincing effect.
-* **Audio Processing:** Uses the **NAudio** library to interact with Windows audio APIs, enabling low-level playback of error sound effects or simulated system alerts.
-* **Dependency Embedding:** Powered by **Costura.Fody**. Instead of forcing the user to carry multiple `.dll` files around, Costura grabs all external assemblies (like NAudio and its modules) and compresses them directly inside the final compiled `FakePanic.exe`.
-* **Output Optimization:** Features a custom **MSBuild Target** pipeline that intercepts the compilation process. It automatically strips away bulky `.xml` documentation files, `.pdb` debugging databases, and `.config` files, ensuring that the compilation folder yields a single, pure executable ready for deployment.
+* **Easy to Close:** You can close the program by pressing the CTRL + F12 key combination.
